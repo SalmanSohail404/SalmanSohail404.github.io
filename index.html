@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container1">
+        <nav>
+            <ul>
+                <li><a href="#header">Homepage</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Welcome!</h1>
+            <h4>I'm a <span class="multiText"></span></h4>
+            <h3>Hi, I'm Salman Sohail.<br>This website serves as a<br>personal portfolio.<br>which I built during my free time.</h3>
+        </div>
+        <img src="test2.png" alt="My image">
+    </div>
+</div>
+
+<!--   --------About--------     -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="photopea.svg" alt="My image" width="500px" height="500px">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello!. I am a university student currently doing Bachelors in Mechanical Engineering from NUST. I am not only eager to learn and gain experience but also to refine and sharpen my skills. Proficiency in Microsoft tools, programming in python are some areas of my skill-set and I will be learning more as time passes.  I have a passion for advancing my learning, especially in the technological field</p>
+
+                <div class="about-description">
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Projects</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Proficiency in C++, Python, html, CSS, and javascript</li>
+                        <li><span>Mechanical</span><br>Manufacturing design</li>
+                        <li><span>For later</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>PDF Dissector</span><br>Built a PDF dissector using python which could split images, tables, text based on headings, and metadata into separate PDF's</li>
+                        <li><span>Rule based Chatbot</span><br>Built a Chatbot using python which could respond anything regarding C++ using web scraping and dictionaries.</li>
+                        <li><span>Mouse Trap car</span><br>Built a mouse trap car in group project using a string, mouse trap, wooden pieces, and CD's</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2013-2022</span><br>O/A level's in Saint mary's Academy, Lalazar -- 6A* 2A in O/level -- 3A* in A/level</li>
+                        <li><span>2022-2026</span><br>Bachelor's in Mechanical Engineering from NUST, Islamabad</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--   --------Contact--------     -->
+<div id="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p style = "margin-left: 39%;" = >Email: salman.sohail1524@gmail.com</p>
+        </div>
+            <div class="social-icons">
+                <a class="link facebook" href="https://www.facebook.com/salman.sohail.904"><i class="fab fa-2x fa-facebook-f"></i></a>
+                <a class="link instagram" href="https://www.instagram.com/salmansohail404/"><i class="fab fa-2x fa-instagram"></i></a>
+                <a class="link linkedin" href="https://www.linkedin.com/in/salman-sohail-426589262/"><i class="fab fa-2x fa-linkedin"></i></a>
+            </div>
+
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script src="https://kit.fontawesome.com/457a315592.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typingEffect =  new Typed(".multiText",{
+        strings : ["Mechanical Engineer","Python Programmer","Web designer"],
+        loop : true,
+        typeSpeed : 50,
+        backSpeed : 50,
+        backDelay : 1500
+    })
+</script>
+
+</body>
+</html>
