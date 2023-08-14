@@ -87,7 +87,7 @@
               <div class="tab-pane fade show active" id="skills">
                 <h3>Skills</h3>
                 <ul>
-                  <li><strong>Programming:</strong> Proficiency in C++, Python, HTML, CSS, and JavaScript</li>
+                  <li><strong>Programming:</strong> Proficiency in C++, Python, MySQL, HTML, CSS, and JavaScript</li>
                   <li><strong>Mechanical:</strong> Proficiency in Autocad 2D and 3D, Solidworks</li>
                   <li><strong>Others:</strong> Proficiency in Microsoft Office tools (MS word, MS Excel, MS Powerpoint)</li>
                 </ul>
@@ -127,7 +127,7 @@
               <img src="Bench Table Render.JPG" class="d-block w-100" alt="Project 1">
             </div>
             <div class="carousel-item">
-              <img src="project2.jpg" class="d-block w-100" alt="Project 2">
+              <img src="Python3.jpg" class="d-block w-100" alt="Project 2">
             </div>
             <div class="carousel-item">
               <img src="project3.jpg" class="d-block w-100" alt="Project 3">
@@ -154,27 +154,32 @@
 </div>
 
 
-<!--   --------Contact--------     -->
-<div id="contact">
+<!-- Contact Section -->
+<footer>
+  <div id="contact" class="bg-darkest">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p>Email: salman.sohail1524@gmail.com</p>
+            <p>If you have any inquiries or would like to get in touch, feel free to reach out:</p>
+            <p><strong>Email:</strong> salman.sohail1524@gmail.com</p>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="social-icons">
-            <a class="link facebook" href="https://www.facebook.com/salman.sohail.904"><i class="fab fa-2x fa-facebook-f"></i></a>
-            <a class="link instagram" href="https://www.instagram.com/salmansohail404/"><i class="fab fa-2x fa-instagram"></i></a>
-            <a class="link linkedin" href="https://www.linkedin.com/in/salman-sohail-426589262/"><i class="fab fa-2x fa-linkedin"></i></a>
+            <h1 class="sub-title">Connect With Me</h1>
+            <div class="social-links">
+              <a class="link facebook" href="https://www.facebook.com/salman.sohail.904"><i class="fab fa-2x fa-facebook-f"></i></a>
+              <a class="link instagram" href="https://www.instagram.com/salmansohail404/"><i class="fab fa-2x fa-instagram"></i></a>
+              <a class="link linkedin" href="https://www.linkedin.com/in/salman-sohail-426589262/"><i class="fab fa-2x fa-linkedin"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
+</footer>
 
   <!-----------Carousel Javascript-->
   <script>
@@ -185,9 +190,9 @@
       });
   
       var projectData = [
-        { name: "Project 1", description: "Description of Project 1" },
-        { name: "Project 2", description: "Description of Project 2" },
-        { name: "Project 3", description: "Description of Project 3" }
+        { name: "Bench Table Render", description: "A meticulously designed bench table, meticulously crafted using SolidWorks and brought to life through the power of PhotoView rendering. Through the precision of SolidWorks, every contour and detail has been carefully honed, resulting in a seamless fusion of form and function. The PhotoView rendering elevates the design, casting a play of light and shadow that accentuates the table's essence. Witness the convergence of technology and craftsmanship as this bench table, born from digital design, emerges as a tangible masterpiece. " },
+        { name: "PDF Dissector", description: "A program made in python that effectively extracts important information such as tables, images, and text based on headers." },
+      //{ name: "Project 3", description: "Description of Project 3" }
       ];
   
       carousel._element.addEventListener('slid.bs.carousel', function (event) {
